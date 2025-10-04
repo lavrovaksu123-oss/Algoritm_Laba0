@@ -1,0 +1,10 @@
+f = open("input.txt", "w")
+f.write("12 25")
+f.close()
+with open("input.txt", "r") as infile:
+    a, b = input().split()
+a = int(a)
+b = int(b)
+c = a + b
+with open("output.txt", "w") as outfile:
+    outfile.write(str(c))
