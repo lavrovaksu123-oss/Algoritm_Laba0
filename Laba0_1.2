@@ -1,0 +1,10 @@
+f = open('input.txt', 'w') 
+f.write('2 4') 
+f.close()
+with open('input.txt', 'r') as infile:
+  a, b=input().split()
+a=int(a)
+b=int(b)
+c=a+(b**2)
+with open('output.txt', 'w') as outfile:
+    outfile.write(str(c))
